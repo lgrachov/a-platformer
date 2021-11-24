@@ -9,10 +9,10 @@ scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.chestClosed, function (sp
     info.setScore(1)
     music.baDing.play()
 })
-function Change_List_a2 (_7: number) {
-    Bar = 7
-    Bar = 7
-}
+scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile2`, function (sprite, location) {
+    game.over(false)
+    Change_List_a(1)
+})
 scene.onOverlapTile(SpriteKind.Player, sprites.castle.tileDarkGrass2, function (sprite, location) {
     controller.moveSprite(Player2, 100, 100)
     tiles.setTilemap(tilemap`level1`)
